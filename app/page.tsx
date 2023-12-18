@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
+      <div className="flex h-20 shrink-0 items-end rounded-lg bg-black p-4 md:h-52">
         <Image
               src="/logo_stats.png"
               width={200}
@@ -19,14 +19,14 @@ export default function Page() {
           <p
             className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className} antialiased`}
           >
-            Bienvenido a tu <strong className='text-blue-500'> Panel de Gestión. </strong>
+            Bienvenido a tu <strong className='text-black'> Panel de Gestión. </strong>
             <br></br>
             Aquí podrás mantener organizada tu empresa, con una interfaz sencilla de utilizar.
           </p>
           <div className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent" />
           <Link
             href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+            className="flex items-center gap-5 self-start rounded-lg bg-black px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
