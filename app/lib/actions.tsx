@@ -10,7 +10,7 @@ import { AuthError } from 'next-auth';
 const FormSchema = z.object({
   id: z.string(),
   customerId: z.string({
-    invalid_type_error: 'Please select a customer.',
+    invalid_type_error: 'Por favor seleccione un cliente.',
   }),
   amount: z.coerce
   .number()
