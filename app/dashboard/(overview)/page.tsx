@@ -16,13 +16,15 @@ export default async function Page() {
         Panel
       </h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {<Card title="Collected" value={totalPaidInvoices} type="collected" />}
-        {<Card title="Pending" value={totalPendingInvoices} type="pending" />}
-        {<Card title="Total Invoices" value={numberOfInvoices} type="invoices" />}
+        {<Card title="Collected" value={totalPaidInvoices} type="collected" color="text-green-500" bgColor="bg-green-200" />}
+        {<Card title="Pending" value={totalPendingInvoices} type="pending" color="text-orange-500" bgColor='bg-orange-200' />}
+        {<Card title="Total Invoices" value={numberOfInvoices} type="invoices" color="text-red-500" bgColor='bg-red-200'/>}
         {<Card
           title="Total Customers"
           value={numberOfCustomers}
           type="customers"
+          color="text-black"
+          bgColor='bg-gray-100'
         />}
       </div>
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
